@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Student Login Form</title>
+	
+<style>
+	body{
+	background-image: url(https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+h1{
+	font-size: 35px;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-style: Times New Roman;
+	text-align: center;
+}
+
+.form{
+	width: 350px;
+	margin: auto;
+	padding: 20px;
+	border-radius: 20px;
+	font-family: sans-serif;
+	font-weight: bold;
+	background: rgb(255, 255, 255, 0.6);
+}
+
+
+input[type=text] {
+ 	width: 90%;
+ 	padding: 10px 20px;
+ 	margin: 10px 0;
+ 	border-radius: 5px;
+}
+
+input[type=number]{
+ 	width: 90%;
+ 	padding: 10px 20px;
+ 	margin: 10px 0;
+ 	border-radius: 5px;
+}
+
+input[type=password]{
+	width: 90%;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+
+input[type=checkbox]{
+	margin: 10px 5px ;
+}
+
+button {
+	width: 90%;
+  color: white;
+  font-weight: bold;
+  padding: 15px 30px;
+  display: list-item;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.login{
+	background-color: #3399ff;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.cancel{
+	background-color: #ff3333;
+	margin: auto;
+	margin-top: 10px;
+}
+
+a{
+	float: right;
+	margin-top: 10px;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+</style>
+
+
+</head>
+<body>
+
+	<h1>Student Login Form</h1>
+
+<div class="form">
+	<label>Username</label>
+	<input type="text" placeholder="Enter Username" name="uname">
+	<label>Password</label>
+	<input type="Password" placeholder="Enter Password" name="pw">
+	<label>Department</label>
+	<input type="text" placeholder="Enter Department" name="dep">
+	<label>Level</label>
+	<input type="number" min="1" max="4" placeholder="Select Level" name="level">
+
+	<label><input type="checkbox" name="check">Remember Me</label>
+	<a href="#">Forgot password? </a>
+
+	<button type="button" class="button login">Login</button>
+	<button type="button" class="button cancel">Cancel</button>
+
+	
+</div>
+
+</body>
+</html>
